@@ -4,7 +4,6 @@ import axios from 'axios';
 import { useState } from 'react';
 import { BsSearch } from 'react-icons/bs';
 import Weather from './components/Weather';
-import Spinner from '/public/spinner.gif';
 
 export default function Home() {
 	const [city, setCity] = useState('');
@@ -24,10 +23,6 @@ export default function Home() {
 		setLoading(false);
 	};
 
-	// Spinner loading animation
-	if (loading) {
-		return <Spinner />;
-	} else {
 		return (
 			<div>
 				{/* Overlay */}
