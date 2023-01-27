@@ -56,6 +56,7 @@ export default function Home() {
 
 			{/* Weather */}
 			{weather.main && <Weather data={weather} />}
+			{/* {Object.keys(weather).length !== 0 && <Weather data={weather} />} */}
 		</div>
 	);
 }
